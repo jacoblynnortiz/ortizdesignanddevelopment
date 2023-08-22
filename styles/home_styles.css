@@ -1,0 +1,82 @@
+.home {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-image: url('https://stlouis.seoforgrowth.com/wp-content/uploads/sites/3/2016/10/st-louis-seo-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-call-to-action {
+    color: #fff;
+    font-size: 3.4rem;
+    padding: 0 15px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.home p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 25px;
+}
+
+.home a {
+	background: linear-gradient(to right, #262092, #0f7fc5);
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    transition: .3s;
+}
+
+.fun-facts-offset {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 150px;
+    position: absolute;
+    top: calc(100vh - 275px);
+    left: calc(50% - width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fun-fact {
+    margin: 15px;
+    max-width: 275px;
+    width: 100%;
+    height: 275px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.6rem;
+    color: #0f7fc5;
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        background-position: center right -550px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    .fun-facts-offset {
+        top: 100vh;
+    }
+}

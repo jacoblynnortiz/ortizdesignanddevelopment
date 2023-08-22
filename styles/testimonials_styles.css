@@ -1,0 +1,122 @@
+.testimonials {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.testimonials h3 {
+    padding: 7.5px;
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    padding: 7.5px;
+    padding-bottom: 15px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+
+.testimonials-container-inner {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    width: 400px;
+    min-height: 600px;
+    padding: 15px;
+    margin: 15px;
+    background: linear-gradient(to top, #262092, #0f7fc5);
+    border-radius: 12px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+}
+
+.testimonial:hover {
+    transform: translateY(-20px) scale(1.05);
+}
+
+.testimonial p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 7.5px;
+    font-size: 1.1rem;
+}
+
+.user {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user h3, .user h4, .user img {
+    padding-bottom: 7.5px;
+    color: #fff;
+}
+
+.user h4 {
+    font-weight: lighter;
+}
+
+.rating {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .testimonials-container-inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .testimonial:hover {
+        transform: translateY(0) scale(1);
+    }
+    .testimonial {
+    width: 350px;
+}
+}
+
+@media (max-width: 550px) {
+    .testimonials-container {
+        align-items: center;
+    }
+
+    .testimonials-container h2, .testimonials-container p {
+        margin-left: 0;
+    }
+
+    .testimonials-container p {
+        text-align: center;
+    }
+}
