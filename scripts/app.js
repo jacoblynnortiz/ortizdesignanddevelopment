@@ -1,19 +1,48 @@
-let toggleBtn = document.getElementById('toggleBtn');
-let checkBoxDark = document.getElementById('switch');
-let body = document.getElementById('body');
-let nav = document.getElementById('wrapper');
+let showMenu = document.getElementById('show-menu');
+let menuClosed = true;
 
-let sideMenu = document.getElementById('sideMenu');
-let hamburger = document.getElementById('hamburger');
+function slide() {
+    if (window.matchMedia('screen and (max-width: 1100px)').matches) {
+        if (menuClosed == true) {
+            menuClosed = false;
+            showMenu.checked = false;
+        } else {
+            menuClosed = true;
+            showMenu.checked = false;
+        }
+    } else {
+        console.log('mobile nav not active');
+    }
+}
 
-let logo = document.getElementById('logo');
-let navLink1 = document.getElementById('navLink1');
-let navLink2 = document.getElementById('navLink2');
-let navLink3 = document.getElementById('navLink3');
-let navLink4 = document.getElementById('navLink4');
-let navLink5 = document.getElementById('navLink5');
-let navLink6 = document.getElementById('navLink6');
-let navLink7 = document.getElementById('navLink7');
+link1.addEventListener('click', function () {
+    slide();
+});
+
+link2.addEventListener('click', function () {
+    slide();
+});
+
+link3.addEventListener('click', function () {
+    slide();
+});
+
+link4.addEventListener('click', function () {
+    slide();
+});
+
+link5.addEventListener('click', function () {
+    slide();
+});
+
+link6.addEventListener('click', function () {
+    slide();
+});
+
+link7.addEventListener('click', function () {
+    slide();
+});
+
 
 document.getElementById("lang").onchange = function () {
 	if (this.selectedIndex !== 0) {
