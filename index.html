@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ortiz Design & Development</title>
+    <meta name="description" content="This is the offcial website Ortiz Design & Development website.">
+    <meta name="keywords" content="ecommerce, web design, web design agency, web development, website maintenence, custom website, development, design, Ortiz Design & Development, news">
     <meta name="author" content="Jacob Ortiz">
-    <title>Revealed Radio Network</title>
     <link rel="icon" href="res/images/icon.png">
 
     <link rel="stylesheet" href="app/css/components/globals.css">
@@ -13,19 +14,365 @@
     <link rel="stylesheet" href="app/css/components/footer_styles.css">
 
     <link rel="stylesheet" href="app/css/home_styles.css">
+    <link rel="stylesheet" href="app/css/about_styles.css">
+    <link rel="stylesheet" href="app/css/pricing_styles.css">
+    <link rel="stylesheet" href="app/css/our_works_styles.css">
+    <link rel="stylesheet" href="app/css/services_styles.css">
+    <link rel="stylesheet" href="app/css/testimonials_styles.css">
 </head>
 <body>
     <main class="content">
-        <div class="landing-page">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="res/images/logo.png"></a>
+            </div>
+            <nav>
+                <button class="hamburger" id="openSideNav">
+                    <span class="stroke-1"></span>
+                    <span class="stroke-2"></span>
+                    <span class="stroke-3"></span>
+                </button>
+            </nav>
+        </header>
+        <div class="side-nav" id="sideNav">
+            <button class="close-nav" id="closeSideNav"><i class="fa-solid fa-x"></i></button>
+            <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#aboutus"><li>About Us</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#ourworks"><li>Our Works</li></a>
+                <a href="#pricing"><li>Pricing</li></a>
+                <a href="#testimonials"><li>Testimonials</li></a>
+                <a href="#contact"><li>Contact Us</li></a>
+            </ul>
+        </div>
+        <div class="landing-page" id="home">
             <video loop autoplay muted>
-                <source src="res/images/BG.mp4">
+                <source src="res/images/landing-page.mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="landing-page-content">
-                <img src="res/images/logo.png">
-                <h2>Coming soon...</h2>
+            <div class="home-hero-content">
+                <h2 class="home-call-to-action">Let's build your dream website today.</h2>
+                <p>Let's make your dream website a reality.</p>
+                <a class="gradient-button" href="#pricing">
+                    <div class="gradient"></div>
+                    <h3>Get Started!</h3>
+                </a>
             </div>
         </div>
+        <div class="fun-facts-offset">
+            <div class="fun-fact">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3 style="color: #fff; font-size: 1.6rem; padding-top: 25px;">Fast Delivery</h3>
+            </div>
+            <div class="fun-fact">
+                <i class="fa-brands fa-react"></i>
+                <h3 style="color: #fff; font-size: 1.6rem; padding-top: 25px;">High Quality</h3>
+            </div>
+            <div class="fun-fact">
+                <i class="fa-solid fa-object-group"></i>
+                <h3 style="color: #fff; font-size: 1.6rem; padding-top: 25px;">Creative Designs</h3>
+            </div>
+            <div class="fun-fact">
+                <i class="fa-solid fa-comments"></i>
+                <h3 style="color: #fff; font-size: 1.6rem; padding-top: 25px;">24 Hour Support</h3>
+            </div>
+        </div>
+        <div class="about" id="aboutus">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-content-row">
+                    <div class="about-info" id="ourmission">
+                        <h2>Our Mission</h2>
+                        <p>At Ortiz Design & Development, our mission is to bring your business into the 21st century and
+                            connect your customers to you online. We are driven by a strong commitment to making you a
+                            custom and beautiful website that stands apart from the crowd. We would love to build you a
+                            website at an affordable price. With a clear vision for the future, we strive to get as many
+                            people as possible a website for their business/organization.
+                        </p>
+                    </div>
+                    <div class="about-picture">
+                        <img src="res/images/img-1.png">
+                    </div>
+                </div>
+                <div class="about-content-row">
+                    <div class="about-picture">
+                        <img src="res/images/img-2.png">
+                    </div>
+                    <div class="about-info" id="ourstory">
+                        <h2>Our Story</h2>
+                        <p>
+                            At Ortiz Design & Development, our story began with a passion and a vision. It was founded May
+                            3, 2023 by
+                            Jacob Ortiz with a clear purpose in mind: to bring your
+                            business to the 21st century and connect your customers to you from the web.
+                            The journey started back in the summer of 2020 when Jacob decided to start web design and
+                            development, he started making websites
+                            at just 15 years, and slowly learned the skills required to start
+                            making websites for people which he would later do with having just 2 years of experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <h3>Our Featured Services</h3>
+            <h2>We Provide All Exclusive Services For Clients</h2>
+            <div class="services-container">
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;"
+                        class="fa-solid fa-object-ungroup"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>We will make a cutting edge User Interface & User Experience for your customers on your website.</p>
+                    <a href="https://en.wikipedia.org/wiki/User_experience_design">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;"
+                        class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Web Maintenance</h3>
+                    <p>Once your website is finished, depending on the plan you purchased, we offer maintenance for free for
+                        1, 3, or 6 months or double the time for a little extra.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;" class="fa-solid fa-database"></i>
+                    <h3>Database Integration</h3>
+                    <p>Any ideas for login capability, blog, etc.? then this is a great thing for you, depending on the plan
+                        you purchased you will have this for you if you want.</p>
+                    <a href="https://en.wikipedia.org/wiki/Database">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;"
+                        class="fa-solid fa-object-group"></i>
+                    <h3>Web Design</h3>
+                    <p>We offer cutting edge web design that will make your website pop and look apart from the crowd.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;"
+                        class="fa-solid fa-layer-group"></i>
+                    <h3>Graphic Design</h3>
+                    <p>For an extra fee we offer graphic designs with unlimited revisions for every plan.</p>
+                    <a href="https://en.wikipedia.org/wiki/Graphic_design">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service" style="position: relative;">
+                    <i style="position: absolute; top: 35px; font-size: 2rem; left: 25px;" class="fa-solid fa-server"></i>
+                    <h3>Hosting Services</h3>
+                    <p>Depending on the plan you purchased, you can get free hosting for 3 or 6 months free or double the
+                        time for a little extra.</p>
+                    <a href="https://en.wikipedia.org/wiki/Internet_hosting_service">Learn more <i style="margin-left: 5px;"
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="my-works" id="ourworks">
+            <div class="my-works-header">
+                <h2>Some Of Our Works</h2>
+                <p>Check out some of our latest and best projects we have undertaked.</p>
+            </div>
+            <div class="works-container">
+                <div class="inner-works-container">
+                    <figure class="snip1256">
+                        <img src="res/images/my-works/my-work-1.jpg" alt="sample42" />
+                        <figcaption>
+                            <h3>Truth Tabernacle Website</h3>
+                            <p>This is a website we designed and developed for a local church and still update for them
+                                frequently.</p><a href="https://truthtabgranite.site" class="read-more">See project</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="snip1256">
+                        <img src="res/images/my-works/my-work-2.jpg" alt="sample22" />
+                        <figcaption>
+                            <h3>Trumann Revival Center Website</h3>
+                            <p>This is a website we made for a local church that we no longer update.</p><a
+                                href="https://codepen.io/jacob-ortiz/pen/yLQgNpP?editors=1100" class="read-more">See
+                                project</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="snip1256">
+                        <img src="res/images/my-works/my-work-3.png" alt="sample22" />
+                        <figcaption>
+                            <h3>Revealed Radio Network Website</h3>
+                            <p>This is a website we mantain for a podcast network.</p><a
+                                href="https://revealedradionetwork.site" class="read-more">See
+                                project</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="pricing" id="pricing">
+            <h3>Pricing Table</h3>
+            <h2>Here Is Our Pricing Plans We Offer</h2>
+            <div class="pricing-container">
+                <div class="pricing-plan">
+                    <div class="pricing-banner">
+                        <h2>Basic</h2>
+                    </div>
+                    <div class="price">
+                        <h4>Starts from</h4>
+                        <h2>$99/Project</h2>
+                    </div>
+                    <div class="plan-features">
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>up to 3 fully responsive pages</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>3-6 months hosting for extra fee</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>database integration for extra fee
+                        </p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>1 month free website maintenance
+                            included</p>
+                    </div>
+                    <a class="gradient-button" href="#contact">
+                        <div class="gradient"></div>
+                        <h3 style="color: #fff; font-size: 1.1rem;">Contact Now</h3>
+                    </a>
+                </div>
+                <div class="pricing-plan">
+                    <div class="pricing-banner">
+                        <h2>Standard</h2>
+                    </div>
+                    <div class="price">
+                        <h4>Starts from</h4>
+                        <h2>$199/Project</h2>
+                    </div>
+                    <div class="plan-features">
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>up to 5 fully responsive pages</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>admin panel and admin login</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>database integration included</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>3-6 months free hosting for extra fee
+                        </p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>3-6 months free website maintenance
+                            included</p>
+                    </div>
+                    <a class="gradient-button" href="#contact">
+                        <div class="gradient"></div>
+                        <h3 style="color: #fff; font-size: 1.1rem;">Contact Now</h3>
+                    </a>
+                </div>
+                <div class="pricing-plan">
+                    <div class="pricing-banner">
+                        <h2>Premium</h2>
+                    </div>
+                    <div class="price">
+                        <h4>Starts from</h4>
+                        <h2>$499/Project</h2>
+                    </div>
+                    <div class="plan-features">
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>up to 10 fully responsive pages</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>admin panel and admin login</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>database integration included</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>6-12 months free hosting included</p>
+                        <p><i style="margin-right: 5px;" class="fa-solid fa-check"></i>6-12 months free website maintenance
+                            included</p>
+                    </div>
+                    <a class="gradient-button" href="#contact">
+                        <div class="gradient"></div>
+                        <h3 style="color: #fff; font-size: 1.1rem;">Contact Now</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials" id="testimonials">
+            <h3>See what our clients have to say</h3>
+            <h2>Testimonials</h2>
+            <div class="testimonials-container-inner">
+                <div class="testimonial">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsa beatae dicta soluta
+                        alias labore inventore impedit numquam tenetur nulla! Adipisci tenetur atque autem est animi
+                        eos. Obcaecati, laboriosam consectetur."</p>
+                    <div class="rating">
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-regular fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="/res/images/faces/user-rating-1.png">
+                        <h3>John Wilson III</h3>
+                        <h4>Pastor</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"They created a website for our church. It looked very professional and
+                        covered the information needed to be shared. It was very
+                        well designed. It helped to advertise activities and videos that was shared to our friends and
+                        neighbors around our church. It helped to reach people in our community also.
+                        I recommend him to anyone needing information for their church, home or company."</p>
+                    <div class="rating">
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                        <i style="color: #d4af37; font-size: 1.3rem; margin: 5px;" class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="/res/images/faces/user-rating-2.jpg">
+                        <h3>Kathryn Moore</h3>
+                        <h4>Pastor</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="res/images/logo.png" alt="#"></a>
+                        </div>
+                        <p>At Ortiz Design & Development, our mission is to bring your business into the 21st century and connect your customers to you online. We are driven by a strong commitment to making you a custom and beautiful website that stands apart from the crowd. We would love to build you a website at an affordable price. With a clear vision for the future, we strive to get as many people as possible a website for their business/organization.</p>
+                        <div class="rrn-socials">
+                            <a class="socials-link" href="https://www.facebook.com/RevealedRadioNetwork"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="socials-link" href="https://www.instagram.com/revealedradionetwork/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="socials-link" href="https://www.youtube.com/@revealedradionetwork676"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>About RRN</h3>
+                        <ul>
+                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a href="about_pages/meetthehost.html">Meet the Host</a></li>
+                            <li><a href="about_pages/ourstaff.html">Our Staff</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Shows</h3>
+                        <ul>
+                            <li><a href="shows/theoracle.html">The Oracle</a></li>
+                            <li><a href="shows/therevealedreport.html">The Revealed Report</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Suggestions</h3>
+                        <ul>
+                            <li><a href="#ourworks">Our Works</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <h3 id="copyrightHeader">Copyright © year Company Name</h3>
+                    <div class="legal-links">
+                        <a href="legal/tos.html">Terms of Service</a>
+                        <a href="legal/privacypolicy.html">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
-</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script src="app/js/components/header.js"></script>
+
+    <script src="app/js/main.js"></script>
+</body> 
 </html>

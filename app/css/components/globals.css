@@ -2,9 +2,9 @@
 
     /* Website Color Scheme */
 
-    --primary-color: #0f0f0f;
+    --primary-color: #1c1c1c;
     --secondary-color: #131313;
-    --accent-color: #3c7cb9;
+    --accent-color: #b93c3c;
 
     --foregroundDark-color: #000;
     --foregroundLight-color: #fff;
@@ -48,14 +48,13 @@ body {
 /* main container for content of page */
 
 .content {
-    padding: 15px;
     width: 100%;
     max-width: 1920px;
     min-height: 100vh;
     background-color: var(--primary-color);
     margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 }
@@ -95,59 +94,41 @@ body {
 	background: #171515;
 }
 
-.rrn-btn {
-	font-size: 1.2rem;
-	color: var(--foregroundLight-color);
-	background-color: var(--accent-color);
-	padding: 15px 25px;
-	border-radius: 18px;
-	display: inline-block;
-	border: 2px solid var(--accent-color);
-	text-align: center;
-	transition: .3s;
-	cursor: pointer;
+.gradient-button {
+    width: 175px;
+    height: 55px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
 }
 
-.wide {
-	width: 100%;
-	display: block;
+.gradient-button:hover > .gradient {
+    transform: rotate(180deg);
 }
 
-.rrn-btn:hover {
-	background-color: transparent;
+.gradient-button h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: lighter;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: 1.1rem;
 }
 
-
-.rrn-btn-outline {
-	font-size: 1.2rem;
-	color: var(--foregroundLight-color);
-	background-color: transparent;
-	padding: 15px 25px;
-	border-radius: 18px;
-	display: inline-block;
-	border: 2px solid var(--accent-color);
-	text-align: center;
-	transition: .3s;
-	cursor: pointer;
-}
-
-.wide {
-	width: 100%;
-	display: block;
-}
-
-.rrn-btn-outline:hover {
-	color: #ccc;
-}
-
-.socials-link {
-    font-size: var(--socialMediaSize);
-    color: var(--foregroundLight-color);
-    margin: 15px 10px;
-    display: inline-block;
+.gradient {
+	background: linear-gradient(to right, var(--accent-color), #531a1a);
+    width: 250px;
+    height: 250px;
+    color: #fff;
     transition: .3s;
-}
-
-.socials-link:hover {
-    color: var(--accent-color);
+    position: absolute;
+    top: -50px;
+    left: -50px;
 }
