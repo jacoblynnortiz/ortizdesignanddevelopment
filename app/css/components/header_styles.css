@@ -166,3 +166,10 @@ nav {
     background-color: #ffffff20;
     color: var(--accent-color);
 }
+
+@media screen and (max-width: 600px) {
+    .header-sticky {
+        height: 80px;
+        padding: 20px 25px;
+    }
+}
