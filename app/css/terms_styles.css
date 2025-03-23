@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.terms-main-header-container {
+    width: 100%;
+    min-height: 550px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-main-header {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 0;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terms-main-header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: left;
+}
+
+.terms-main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
+
+.terms-main-header p {
+    width: 100%;
+    max-width: 50ch;
+    font-size: 1.4rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
+
+.terms-main-header img {
+    width: 300px;
+    height: 250px;
+    margin: 85px;
+}
+
+.terms-body-max-container {
+    width: 100%;
+    min-height: 0;
+}
+
+.terms-body-container {
+    width: 100%;
+    min-height: 600px;
+    background-color: transparent;
+    padding-top: 60px;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.terms-body {
+    width: 100%;
+    max-width: 700px;
+    margin-left: calc(50% - 550px)
+}
+
+.terms-body h4 {
+    font-size: 1.1rem;
+    font-family: 'Varela Round', sans-serif;
+    margin: 35px 0;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.terms-body h3 {
+    font-size: 1.6rem;
+    font-family: 'Varela Round', sans-serif;
+    margin: 35px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.terms-body ol {
+    margin-left: 25px;
+}
+
+.terms-body ol li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-family: 'Varela Round', sans-serif;
+    color: var(--accent-color);
+    list-style: decimal;
+    padding-left: 15px;
+}
+
+.terms-body ol li a {
+    color: var(--accent-color);
+}
+
+.terms-body ol li a:hover {
+    text-decoration: underline;
+}
+
+.terms-body ol li span {
+    color: #fff;
+}
+
+.side-menu {
+    padding-top: 110px;
+    padding-left: 100px;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.side-menu h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.side-menu li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.side-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.side-menu a, li a {
+    color: #fff;
+    transition: .3s;
+}
+
+.side-menu a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+    .side-menu {
+        position: relative;
+    }
+    .terms-body-container{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .side-menu {
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+    }
+    .side-menu h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .side-menu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .side-menu ul a {
+        text-align: center;
+        margin: 0 15px;
+    }
+    .terms-body {
+        margin-left: 0;
+    }
+    .terms-body h3, .terms-body h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .terms-body ol {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .terms-main-header {
+        flex-direction: column;
+        padding-top: 70px;
+    }
+    .terms-header-col2 img {
+        width: 200px;
+        height: 150px;
+        margin-top: 65px;
+        margin: 45px;
+    }
+}

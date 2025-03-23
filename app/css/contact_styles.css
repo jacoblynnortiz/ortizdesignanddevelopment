@@ -1,0 +1,201 @@
+.contact {
+    width: 100%;
+    min-height: 0;
+    margin: 45px 0;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 0;
+    padding: 0 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact-content h2 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.contact-content h3 {
+    text-align: left;
+}
+
+.contact-columns-container {
+    width: 100%;
+    display: flex;
+    padding: 0 25px;
+    padding-left: 0;
+    padding-top: 25px;
+}
+
+.contact-columns-container .col1,
+.contact-columns-container .col2 {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-columns-container .col2 {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+}
+
+.contact-columns-container .col2::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 285px);
+    left: calc(50% - 285px);
+    width: 600px;
+    height: 600px;
+    background: url('../../res/images/bubble.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .2;
+    z-index: 1;
+}
+
+.contact-columns-container .col2 .contact-us-bubble {
+    width: 500px;
+    height: 500px;
+    background: url('../../res/images/contact-us.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.contact-fields {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.contact-fields form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-fields form input[type='text'],
+.contact-fields form input[type='email'] {
+    width: 100%;
+    max-width: 450px;
+    height: 45px;
+    padding: 5px 15px;
+    background-color: transparent;
+    border-radius: var(--roundedCorners);
+    color: #fff;
+    caret-color: #fff;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.contact-fields form textarea {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: var(--roundedCorners);
+    color: #fff;
+    caret-color: #fff;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    resize: none;
+    transition: .3s;
+}
+
+.contact-fields form input[type='text']:focus,
+.contact-fields form input[type='email']:focus,
+.contact-fields form textarea:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.contact-fields form input[type='submit'] {
+    width: 100%;
+    max-width: 450px;
+    height: 45px;
+    border: none;
+    border-radius: 22px;
+    color: #fff;
+    background-color: var(--accent-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.contact-fields form input[type='submit']:hover,
+.contact-fields form input[type='submit']:focus {
+    background-color: var(--accentDarker-color);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contact {
+        margin-top: -25px;
+    }
+
+    .contact-content {
+        padding: 0 25px;
+    }
+
+    .contact-columns-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-columns-container .col1,
+    .contact-fields,
+    .contact-fields form {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-content .col2 {
+        padding-right: 0;
+    }
+
+    .contact-us-bubble,
+    .contact-us-bubble::after {
+        width: 100%;
+        scale: .8;
+    }
+
+    .contact .col2::after {
+        top: calc(50% - 300px);
+        left: calc(50% - 300px);
+    }
+
+    .contact-content h2,
+    .contact-content h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .contact-us-bubble,
+    .contact-columns-container .col2::after {
+        scale: .6;
+    }
+
+    .contact-columns-container .col2 {
+        padding-left: 0;
+    }
+}

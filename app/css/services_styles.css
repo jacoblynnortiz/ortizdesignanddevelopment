@@ -1,0 +1,134 @@
+.services {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.services-content {
+    width: 100%;
+    padding: 0 175px;
+    padding-top: 45px;
+}
+
+.service-cards-container {
+    width: 90%;
+    min-height: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.service-cards-container .col1,
+.service-cards-container .col2,
+.service-cards-container .col3 {
+    width: 100%;
+    min-height: 500px;
+    padding: 15px 25px;
+}
+
+.service-cards-container .col1 {
+    padding-top: 85px;
+    transition: all 1.2s;
+}
+
+.service-cards-container .col2 {
+    transition: all .7s;
+}
+
+.service-cards-container .col3 {
+    padding-top: 85px;
+    transition: all 1.2s;
+}
+
+.service-cards-container .card {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid var(--accent-color);
+    margin-bottom: 65px;
+    border-radius: var(--roundedCorners);
+    box-shadow: 0px 2px 12px 12px rgba(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    transition: .3s;
+}
+
+.service-cards-container .card:hover {
+    scale: 1.02;
+}
+
+.service-cards-container .card span {
+    font-size: 3.6rem;
+    color: var(--accent-color);
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.service-cards-container .card h4 {
+    font-size: var(--discriptionTextSize);
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.service-cards-container .card p {
+    font-size: var(--normalTextSize);
+    color: #fff;
+    line-height: 1.6;
+    padding-bottom: 25px;
+}
+
+.service-cards-container .card a {
+    font-size: 1rem;
+    color: grey;
+    transition: .3s;
+}
+
+.service-cards-container .card a:hover,
+.service-cards-container .card a:focus {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 1700px) {
+    .services-content {
+        padding: 0 50px;
+    }
+
+    .service-cards-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .service-cards-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services-content {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .service-cards-container .col1,
+    .service-cards-container .col2,
+    .service-cards-container .col3 {
+        max-width: 500px;
+        padding: 25px 15px;
+    }
+
+    .service-cards-container .card:hover {
+        scale: 1;
+    }
+
+    .service-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards-container .col1, .service-cards-container .col3 {
+        padding-top: 15px;
+    }
+
+    .service-cards-container .col1 {
+        padding-top: 45px;
+    }
+}

@@ -1,0 +1,126 @@
+.about {
+    width: 100%;
+    min-height: 0vh;
+}
+
+.about-content {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    padding-top: 100px;
+}
+
+.about .col1 {
+    width: 100%;
+    min-height: 550px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about .col1 h2 {
+    margin-bottom: 25px;
+}
+
+.about .col1 p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    max-width: 70ch;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.about .col2 {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 150px;
+    position: relative;
+}
+
+.about .col2::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 375px);
+    left: calc(50% - 375px);
+    width: 600px;
+    height: 600px;
+    background: url('../../res/images/bubble.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .2;
+    z-index: 1;
+}
+
+.about .col2 .about-us-bubble {
+    width: 500px;
+    height: 500px;
+    background: url('../../res/images/about-us-bubble.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 1350px) {
+
+    .about-content .col1 {
+        padding-left: 50px;
+    }
+
+    .about-content .col2 {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .about-content {
+        flex-direction: column;
+        padding: 100px 0 0 0;
+    }
+
+    .about-content .col1 {
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .about-content .col2 {
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    .about-us-bubble,
+    .about .col2::after {
+        scale: .8;
+    }
+
+    .about .col2::after {
+        top: calc(50% - 355px);
+        left: calc(50% - 325px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about .col2::after {
+        top: calc(50% - 340px);
+        left: calc(50% - 300px);
+    }
+
+    .about .col1 p {
+        font-size: var(--normalTextSize);
+    }
+}
