@@ -3,15 +3,23 @@
   background-color: var(--primary-color);
 }
 
-.home-hero {
+.home-hero-outer {
   width: 100%;
   min-height: 80vh;
   background: linear-gradient(to right bottom, #272672, #ff2f2f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
   position: relative;
+}
+
+.home-hero {
+  width: 100%;
+  max-width: 1920px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 200px;
 }
 
 .home-hero .bubbles {
@@ -118,7 +126,7 @@
   max-width: 600px;
   height: 600px;
   margin-bottom: 150px;
-  z-index: 1;
+  z-index: 2;
   background: url("../../res/images/home-hero-bubble.svg");
   background-position: center;
   background-size: cover;
@@ -151,11 +159,11 @@
 /* wave svg */
 
 .wave {
-  width: 100%;
+  width: 140%;
   height: 600px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -300px;
   transform: rotate(180deg);
   z-index: 1;
 }
@@ -164,10 +172,12 @@
 
 .home-hero-content-bottom {
   width: 100%;
+  max-width: 1920px;
   min-height: 0;
   position: absolute;
   bottom: -20vh;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,7 +363,13 @@
     scale: 0.9;
   }
 
+  .home-hero-content {
+    padding-top: 200px;
+  }
+
   .wave {
+    left: 0;
+    width: 100%;
     bottom: -40px;
   }
 }
@@ -381,6 +397,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 15px;
+    padding-top: 200px;
   }
 
   .home-hero-content-bottom {

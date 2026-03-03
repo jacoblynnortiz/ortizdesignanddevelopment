@@ -74,7 +74,8 @@
         </div>
     </header>
     <main class="content">
-        <section class="home-hero" id="home">
+        <div class="home-hero-outer">
+            <section class="home-hero" id="home">
             <div class="bubbles">
                 <div class="bubble"></div>
                 <div class="bubble"></div>
@@ -123,6 +124,7 @@
                 </div>
             </div>
         </section>
+        </div>
         <section class="about" id="aboutus">
             <div class="about-content">
                 <div class="col1">
@@ -395,24 +397,47 @@
             </div>
         </section>
         <section class="contact" id="contact">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
             <div class="contact-content">
                 <h2>Contact Us</h2>
-                <h3>Drop A Message</h3>
+                <h3 class="mini-header">Any question or remarks? Just write us a message!</h3>
                 <div class="contact-columns-container">
                     <div class="col1">
-                        <div class="contact-fields">
-                            <form>
-                                <input id="name" type="text" required placeholder="Full Name">
-                                <input id="email" type="email" required placeholder="Email">
-                                <input id="phone" type="text" required placeholder="Phone">
-                                <input id="subject" type="text" required placeholder="Subject">
-                                <textarea id="message" required minlength="50" placeholder="Message"></textarea>
-                                <input type="submit" value="Send" id="sendBtn">
-                            </form>
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i>ortizdesignanddevelopment@gmail.com</li>
+                            <li><i class="fa-solid fa-phone"></i>+1 (314) 330-9388</li>
+                        </ul>
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                     <div class="col2">
-                        <div class="contact-us-bubble"></div>
+                        <div class="contact-fields">
+                            <form>
+                                <div class="field-col">
+                                    <input id="name" type="text" required placeholder="Full Name">
+                                    <input id="subject" type="text" required placeholder="Subject">
+                                </div>
+                                <div class="field-col">
+                                    <input id="email" type="email" required placeholder="Email">
+                                    <input id="phone" type="text" required placeholder="Phone">
+                                </div>
+                                <div class="field-col">
+                                    <textarea id="message" required minlength="50" placeholder="Write your Message..."></textarea>
+                                    <input type="submit" value="Send" id="sendBtn">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="airplane"></div>
                     </div>
                 </div>
             </div>

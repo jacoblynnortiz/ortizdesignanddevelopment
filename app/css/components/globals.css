@@ -47,7 +47,7 @@ body {
 	animation-fill-mode: forwards;
 	overflow-x: hidden;
 	/* off white background shows on sides of content if screen is over 1080p */
-    background-color: var(--backgroundDark-color);
+    background-color: var(--primary-color);
 }
 
 h2 {
@@ -69,7 +69,6 @@ h3 {
 
 .content {
     width: 100%;
-    max-width: 1920px;
     min-height: 100vh;
     background-color: var(--primary-color);
     margin: 0 auto;

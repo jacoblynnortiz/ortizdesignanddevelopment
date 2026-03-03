@@ -1,5 +1,6 @@
 .about {
     width: 100%;
+    max-width: 1920px;
     min-height: 0vh;
 }
 
@@ -86,7 +87,7 @@
 
     .about-content {
         flex-direction: column;
-        padding: 100px 0 0 0;
+        padding: 400px 0 0 0;
     }
 
     .about-content .col1 {
